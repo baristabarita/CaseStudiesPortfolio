@@ -7,8 +7,9 @@ const UserLayout = () => {
     return(
         <div>
             <Navbar />
-            <h1>layout lol</h1>
-            <Outlet />
+            <div className='w-full mt-[5em]'>
+                <Outlet />
+            </div>
             <Footer />
         </div>
     )
