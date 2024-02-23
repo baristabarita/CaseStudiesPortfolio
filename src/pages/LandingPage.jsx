@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import GroupMembers from '../components/members/GroupMembers';
+import CasestudyList from '../components/casestudylist/CaseStudyList';
 
 const LandingPage = () => {
     return(
@@ -27,7 +28,14 @@ const LandingPage = () => {
             <div className='flex justify-center'>
                 <hr className="h-px mt-2 mb-5 bg-black border-0 dark:bg-gray-700 w-5/6" />
             </div>
-
+            
+            <section className='pb-7 px-10 flex flex-col items-center h-full gap-2'>
+                <h1 className='mt-3 text-[7vh] font-josefin'>Delve into our <strong>Case Studies.</strong></h1>
+                <p className='mb-5 font-monsterrat w-4/5 text-center'>
+                Curious about how we can help businesses achieve their goals? Explore our collection of real-world case studies, where we delve into the challenges faced, strategies implemented, and impactful results delivered. Discover how we tackled diverse issues, from <strong>Economic Growth</strong> to <strong>Infrastructure, Industry, and Innovations.</strong>
+                </p>
+                <CasestudyList />
+            </section>
         </div>
     )
 }
