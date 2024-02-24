@@ -4,13 +4,15 @@ import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 
 const UserLayout = () => {
-    return(
+    return (
         <div className='flex flex-col h-screen'>
             <Navbar />
-            <div className='w-full mt-[5em]'>
-                <Outlet />
+            <div className='animate-fade-up'>
+                <div className='w-full mt-[5em]'>
+                    <Outlet />
+                </div>
+                <Footer />
             </div>
-            <Footer />
         </div>
     )
 }
