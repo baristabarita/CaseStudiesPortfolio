@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Separator } from "@/components/ui/separator"
 import GroupMembers from '../components/members/GroupMembers';
 import CasestudyList from '../components/casestudylist/CaseStudyList';
 import collab from '../assets/images/icons/digital-collaboration.png'
@@ -33,9 +34,7 @@ const LandingPage = () => {
                 </span>
             </section>
 
-            <div className='flex justify-center'>
-                <hr className="h-px mt-8 mb-2 bg-black border-0 dark:bg-gray-700 w-5/6" />
-            </div>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mb-4 bg-black"/>
 
             <section id='sectionpart' className='pb-7 px-10 flex flex-col items-center h-full gap-2'>
                 <h1 className={`mt-3 text-[7vh] font-josefin ${isVisible ? 'animate-fade-up animate-once animate-ease-out animate-duration-[2000ms] animate-delay-300' : ''}`}>
@@ -49,9 +48,7 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <div className='flex justify-center'>
-                <hr className="h-px mt-2 mb-5 bg-black border-0 dark:bg-gray-700 w-5/6" />
-            </div>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mb-4 bg-black"/>
 
             <section className='pb-7 px-10 flex flex-col items-center h-full gap-2 animate-fade-up animate-once animate-ease-out animate-duration-[2500ms] animate-delay-500'>
                 <h1 className='mt-3 text-[7vh] font-josefin'>

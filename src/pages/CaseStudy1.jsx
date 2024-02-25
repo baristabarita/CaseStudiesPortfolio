@@ -1,17 +1,31 @@
 import React from 'react'
+import { Separator } from "@/components/ui/separator"
 import Cover from '../components/casestudysections/Cover'
-import samplebanner from '../assets/samplebanner.png'
 import IntroContext from '../components/casestudysections/IntroContext'
+import samplebanner from '../assets/samplebanner.png'
 
 const CaseStudy1 = () => {
-    return(
+    return (
         <div>
             <Cover image={samplebanner} />
+            <div className='px-10 sm:px-16 lg:px-20'>
+                <h1 className="text-5xl font-bold my-5 font-monsterrat">CaseStudy1 page title</h1>
+                <ul className="list-disc list-inside font-light font-roboto ml-7">
+                    <li>Timeline: January 2024 - March 2024</li>
+                </ul>
+            </div>
+
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black"/>
+            
             <div>
-            <IntroContext
-                title = "Context"
-                paragraph = "The logistics industry is a vital component of the global economy, supporting businesses of all sizes across many different sectors. However, the industry also faces many challenges and opportunities in the post-covid-19 world, such as rising trade tensions, changing supply chain dynamics, technological innovations, sustainability issues, and talent gaps. In this case study, we will explore how business managers in the logistics industry, specifically trucking managers, can leverage digital solutions to manage bookings and reach clients more effectively and efficiently, while also contributing to the broader goal of promoting decent work and economic growth for all."
-            />
+                <IntroContext
+                    title="Context"
+                    paragraph="The logistics industry, a key player in the global economy, is navigating a post-COVID-19 world filled with challenges and opportunities, including trade tensions, supply chain shifts, tech innovations, sustainability, and talent gaps. This case study focuses on how trucking managers can use digital solutions to enhance booking management and client outreach, contributing to economic growth and decent work."
+                />
+            </div>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black"/>
+            <div>
+                eeeeeeeee
             </div>
         </div>
     )
