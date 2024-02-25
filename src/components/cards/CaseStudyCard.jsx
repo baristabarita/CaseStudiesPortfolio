@@ -9,7 +9,7 @@ const CaseStudyCard = ({ imgSrc, title, description, link }) => {
     }
 
     return (
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700 cursor-pointer" onClick={handleNavigation}>
+        <div className="max-w-sm bg-white border border-gray-500 rounded-lg shadow hover:shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700 cursor-pointer" onClick={handleNavigation}>
             <img className="rounded-t-lg" src={imgSrc} alt="Case Study Banner" />
             <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
