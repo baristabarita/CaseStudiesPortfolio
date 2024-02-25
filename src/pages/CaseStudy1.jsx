@@ -6,6 +6,9 @@ import samplebanner from '../assets/samplebanner.png'
 import Problem from '@/components/casestudysections/Problem'
 import Solution from '@/components/casestudysections/Solution'
 import PaperResearch from '@/components/casestudysections/PaperResearch'
+import CompAnalysis from '@/components/casestudysections/CompAnalysis'
+import Case1List from '@/components/casestudysections/complists/Case1List'
+import Case1Competitors from '@/components/casestudysections/complists/Case1Logos'
 
 const CaseStudy1 = () => {
     return (
@@ -44,8 +47,9 @@ const CaseStudy1 = () => {
                 />
             </div>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+
             <div className="flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20">
-                
+
                 <span className='text-1xl font-light font-monsterrat mb-2'>
                     Researching the Problem
                 </span>
@@ -55,17 +59,30 @@ const CaseStudy1 = () => {
                     statement="Starting with white paper research, The group started their study with an extensive review of research articles and works on efficiency, trucking, and related economic impacts."
                 />
                 <p className='text-left mt-2 font-roboto font-light text-lg'>
-                    In a study conducted by the{' '} 
+                    In a study conducted by the{' '}
                     <a className="text-blue-500 underline" href="https://hcommons.org/deposits/objects/hc:61486/datastreams/CONTENT/content" target="_blank" rel="noopener noreferrer">
                         Ignatian International Journal for Multidisciplinary Research
                     </a>:
                 </p>
-                <p className='text-2xl mx-4 my-4'>
+                <p className='text-2xl mx-20 my-4'>
                     "A strong positive correlation (r = .755, p &lt; .001) is found, highlighting the connection between <strong>improved operational efficiency</strong> and <strong>higher levels of customer satisfaction.</strong> Strategies such as technology integration and reliable delivery are recommended."
                 </p>
 
-
+                <CompAnalysis
+                    headline="Competitive Analysis Research"
+                    statement="After pinpointing the problem they needed to address, the research team began a thorough phase of competitive analysis. This phase was designed to use existing applications or systems that address the needs of managers and contribute to improved work efficiency. As a result, the group selected three competitors to focus on:"
+                    comp1="Shippabo"
+                    comp2="Transfix"
+                    comp3="FreightPOP"
+                />
             </div>
+            <Case1Competitors />
+            <div className="flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20">
+                <p className='text-left font-roboto font-light text-lg'>These three were then evaluated based on relevant similarities:</p>
+                <Case1List />
+            </div>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+
         </div>
     )
 }
