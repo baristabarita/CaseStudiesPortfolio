@@ -1,15 +1,6 @@
 import React, { useState } from 'react'
-import logo1 from '../../../assets/icons/shippabo.png'
-import logo2 from '../../../assets/icons/transfix.png'
-import logo3 from '../../../assets/icons/freightpop.png'
 
-const Case1Competitors = () => {
-    const competitors = [
-        { img: logo1, name: 'Shippabo', link: 'https://www.shippabo.com/' },
-        { img: logo2, name: 'Transfix', link: 'https://transfix.io/' },
-        { img: logo3, name: 'FreightPOP', link: 'https://www.freightpop.com/' },
-    ];
-
+const Competitors = ({competitors}) => {
     return (
         <>
             <div className='flex flex-wrap justify-center mt-4'>
@@ -26,4 +17,4 @@ const Case1Competitors = () => {
     );
 }
 
-export default Case1Competitors;
+export default Competitors;
