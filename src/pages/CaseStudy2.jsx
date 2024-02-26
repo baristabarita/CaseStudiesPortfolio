@@ -10,10 +10,15 @@ import CompAnalysis from '@/components/casestudysections/CompAnalysis'
 import Competitors from '@/components/casestudysections/Competitors'
 import CaseList from '@/components/casestudysections/CaseList'
 import UserResearch from '@/components/casestudysections/UserResearch'
+import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 
 import logo1 from '../assets/icons/thumbtack.jpeg'
 import logo2 from '../assets/icons/magaya.png'
 import logo3 from '../assets/icons/elementum.png'
+import persona1 from '../assets/images/CS2P1.png'
+import persona2 from '../assets/images/CS2P2.jpg'
+import emmap1 from '../assets/images/CS2EM1.jpg'
+import emmap2 from '../assets/images/CS2EM2.jpg'
 
 const CaseStudy2 = () => {
     const competitors = [
@@ -149,8 +154,26 @@ const CaseStudy2 = () => {
                 />
             </div>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
-            <div>
-                Section
+            <div className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Synthesize Research
+                </span>
+                <SynthesizeResearch
+                    headline="Personas"
+                    statement="After interviewing potential target users, the group learned a lot about their backgrounds, needs, wants, and difficulties. They then used this information to create simplified profiles, called personas, on a MIRO board to better understand the users of the system."
+                    images={[
+                        { src: persona1, caption: 'Persona 1: Eduard Martinez' },
+                        { src: persona2, caption: 'Persona 2: Antonio Lopez' },
+
+                    ]}
+                    head2="Empathy Maps"
+                    state2="After creating the personas, the team made empathy maps for each one while utilizing the same MIRO board. An empathy map is a visual tool used to understand users better, including their feelings, thoughts, actions, problems, and goals. Everyone in the group added their insights to each part of every empathy map. This group effort made sure that each empathy map gave a full and balanced view of the persona it represented."
+                    empmaps={[
+                        { src: emmap1, caption: 'Empathy Map for Eduard Martinez' },
+                        { src: emmap2, caption: 'Empathy Map for Antonio Lopez' },
+
+                    ]}
+                />
             </div>
         </div>
     )

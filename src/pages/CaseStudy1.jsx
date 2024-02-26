@@ -10,10 +10,17 @@ import CompAnalysis from '@/components/casestudysections/CompAnalysis'
 import Competitors from '@/components/casestudysections/Competitors'
 import CaseList from '@/components/casestudysections/CaseList'
 import UserResearch from '@/components/casestudysections/UserResearch'
+import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 
 import logo1 from '../assets/icons/shippabo.png'
 import logo2 from '../assets/icons/transfix.png'
 import logo3 from '../assets/icons/freightpop.png'
+import persona1 from '../assets/images/CS1P1.jpg'
+import persona2 from '../assets/images/CS1P2.jpg'
+import persona3 from '../assets/images/CS1P3.jpg'
+import emmap1 from '../assets/images/CS1EM1.jpg'
+import emmap2 from '../assets/images/CS1EM2.jpg'
+import emmap3 from '../assets/images/CS1EM3.jpg'
 
 const CaseStudy1 = () => {
     const competitors = [
@@ -136,7 +143,7 @@ const CaseStudy1 = () => {
                     comp3="FreightPOP"
                 />
             </div>
-            <Competitors competitors={competitors}/>
+            <Competitors competitors={competitors} />
             <div className="flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20">
                 <p className='text-left font-roboto font-light text-lg'>These three were then evaluated based on relevant similarities:</p>
                 <CaseList sections={sections} />
@@ -159,8 +166,27 @@ const CaseStudy1 = () => {
                 />
             </div>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
-            <div>
-                Section
+            <div className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Synthesize Research
+                </span>
+                <SynthesizeResearch
+                    headline="Personas"
+                    statement="Given the results and insights of the interviewees, the group received a lot of data on user backgrounds, opinions, needs, and frustrations. To synthesize the research, the group created personas on a MIRO board based on the observations and analysis of the data."
+                    images={[
+                        { src: persona1, caption: 'Persona 1: Arianne Bautista' },
+                        { src: persona2, caption: 'Persona 2: Manuel Sanchez' },
+                        { src: persona3, caption: 'Persona 3: Jose Miole' },
+
+                    ]}
+                    head2="Empathy Maps"
+                    state2="Following the personas, the group came up with empathy maps on the same MIRO board for each of the personas. An empathy map is a graphic method that is used in user-centered design thinking methods to better comprehend users, such as their feelings, thoughts, behaviors, pain points, and goals. Each group member contributed to each of the quadrants for each empathy map. This collaborative effort ensured that each empathy map represented a comprehensive and well-rounded understanding of the corresponding persona."
+                    empmaps={[
+                        { src: emmap1, caption: 'Empathy Map for Arianne Bautista' },
+                        { src: emmap2, caption: 'Empathy Map for Manuel Sanchez' },
+                        { src: emmap3, caption: 'Empathy Map for Jose Miole' },
+                    ]}
+                />
             </div>
         </div>
     )
