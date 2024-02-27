@@ -11,6 +11,7 @@ import Competitors from '@/components/casestudysections/Competitors'
 import CaseList from '@/components/casestudysections/CaseList'
 import UserResearch from '@/components/casestudysections/UserResearch'
 import SynthesizeResearch from '@/components/casestudysections/SynthRes'
+import Ideation from '@/components/casestudysections/Ideation'
 
 import logo1 from '../assets/icons/shippabo.png'
 import logo2 from '../assets/icons/transfix.png'
@@ -21,7 +22,11 @@ import persona3 from '../assets/images/CS1P3.jpg'
 import emmap1 from '../assets/images/CS1EM1.jpg'
 import emmap2 from '../assets/images/CS1EM2.jpg'
 import emmap3 from '../assets/images/CS1EM3.jpg'
-import Ideation from '@/components/casestudysections/Ideation'
+import ideamap1 from '../assets/images/CS1IM1.jpg'
+import ideamap2 from '../assets/images/CS1IM2.jpg'
+import ideamap3 from '../assets/images/CS1IM3.jpg'
+import ideamap4 from '../assets/images/CS1IM4.jpg'
+
 
 const CaseStudy1 = () => {
     const competitors = [
@@ -167,7 +172,7 @@ const CaseStudy1 = () => {
                 />
             </div>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
-            <div className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
                 <span className='text-1xl font-light font-monsterrat mb-2'>
                     Synthesize Research
                 </span>
@@ -188,20 +193,30 @@ const CaseStudy1 = () => {
                         { src: emmap3, caption: 'Empathy Map for Jose Miole' },
                     ]}
                 />
-            </div>
+            </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
             <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
                 <span className='text-1xl font-light font-monsterrat mb-2'>
                     Ideation
                 </span>
                 
-                {/* 
+                 
                 <Ideation 
                     headline="Beyond Brainstorming: Unveiling the Power of Ideation Maps"
                     statement="Creating a user-friendly and engaging ideation map interface with the sole focus to enhance app/site experience can help people achieve their goals not only easily but also be enjoyable. However, such a map should be clear and intuitive to help others navigate and interact through the planning session. It should also be useful and relevant so that others can find the value and benefit of utilizing the map in future project makings. With this in mind, the group created 4 ideation maps: brainstorming, fishbone, scamper, and user journey"
+                    ideations = {
+                        [
+                            {name:'Brainstorming Map', src: ideamap1, caption: 'The group used a brainstorming map to identify a specific sector within the logistics industry for their system, given its broad scope and significant role in the global economy. After considering various sectors, the group decided to focus on the trucking sector due to its crucial role in national trade and commerce, its potential for innovation in the supply chain, and the existing familiarity of a group member’s parent with the industry. The brainstorming map was instrumental in generating, organizing, evaluating, and prioritizing ideas, ultimately guiding the group to select the best idea that aligns with the system’s vision and scope.'},
+                            {name:'Fishbone Diagram', src: ideamap2, caption: 'The group used fishbone diagrams to identify and address potential problems within the logistics industry. The diagrams helped highlight prevalent issues such as operational difficulties in businesses and challenges in client-business partner connections. Some of the main causes identified include lack of communication, outdated operational methods, and inadequate access to client databases. The fishbone diagrams facilitated a structured problem-solving process, enabling the group to visualize the relationships between the problems and their causes.'},
+                            {name:'S.C.A.M.P.E.R', src: ideamap3, caption: 'The group utilized SCAMPER maps to generate solutions for their system, The SCAMPER method allowed the group to explore different aspects of the processes based on the system in mind. Ideas were generated under each of the seven lenses - Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, and Reverse. The group agreed on key ideas such as replacing paper-based booking systems with a digital interface and adapting client feedback mechanisms for service improvements. The SCAMPER session not only addressed initial challenges but also uncovered unforeseen opportunities for improvement, enhancing collaboration and exploring different scenarios and perspectives for the system and its users.'},
+                            {name:'User Journey Map', src: ideamap4, caption: 'For the final phase of the ideation process, the group used a User Journey Map to visualize the experience of a user with the system. The User Journey Map allowed the group to understand the user’s interactions with the system, their needs, perceptions, and pain points. The group mapped out different stages of the user’s journey, from initial contact through the process of engagement and into a long-term relationship. Key insights such as the need for an intuitive interface and efficient communication channels were identified. The User Journey Map facilitated a user-centered approach, enabling the group to design a system that not only solves industry problems but also enhances the user experience.'},
+                            
+                        ]
+                    }
                 />
-                */}
+                
             </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
         </div>
     )
 }

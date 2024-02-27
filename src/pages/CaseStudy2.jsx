@@ -11,6 +11,7 @@ import Competitors from '@/components/casestudysections/Competitors'
 import CaseList from '@/components/casestudysections/CaseList'
 import UserResearch from '@/components/casestudysections/UserResearch'
 import SynthesizeResearch from '@/components/casestudysections/SynthRes'
+import Ideation from '@/components/casestudysections/Ideation'
 
 import logo1 from '../assets/icons/thumbtack.jpeg'
 import logo2 from '../assets/icons/magaya.png'
@@ -19,6 +20,10 @@ import persona1 from '../assets/images/CS2P1.png'
 import persona2 from '../assets/images/CS2P2.jpg'
 import emmap1 from '../assets/images/CS2EM1.jpg'
 import emmap2 from '../assets/images/CS2EM2.jpg'
+import ideamap1 from '../assets/images/CS2IM1.jpg'
+import ideamap2 from '../assets/images/CS2IM2.jpg'
+import ideamap3 from '../assets/images/CS2IM3.jpg'
+import ideamap4 from '../assets/images/CS2IM4.jpg'
 
 const CaseStudy2 = () => {
     const competitors = [
@@ -175,6 +180,29 @@ const CaseStudy2 = () => {
                     ]}
                 />
             </div>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Ideation
+                </span>
+                
+                 
+                <Ideation 
+                    headline="Beyond Brainstorming: Unveiling the Power of Ideation Maps"
+                    statement="Creating a user-friendly and engaging ideation map interface with the sole focus to enhance app/site experience can help people achieve their goals not only easily but also be enjoyable. However, such a map should be clear and intuitive to help others navigate and interact through the planning session. It should also be useful and relevant so that others can find the value and benefit of utilizing the map in future project makings. With this in mind, the group created 4 ideation maps: brainstorming, fishbone, scamper, and user journey"
+                    ideations = {
+                        [
+                            {name:'Brainstorming Map', src: ideamap1, caption: 'A group used a brainstorming map to choose a focus for their logistics system. Recognizing the industrys vastness and the need for a specific area, they identified various sectors and their merits. Ultimately, they chose the trucking sector due to its critical role in national trade, its potential for innovation in the supply chain, and a members family connection to the industry, which would aid user testing and business process consultations. The brainstorming map facilitated generating, organizing, evaluating, and selecting the most suitable sector, ensuring alignment with the systems objectives and limitations.'},
+                            {name:'Fishbone Diagram', src: ideamap2, caption: 'To address the complexities of the diverse logistics industry, the group used fishbone diagrams to identify and prioritize pressing issues. By brainstorming sub-problems and potential causes, the group pinpointed recurring issues like communication gaps, outdated operations, and limited access to information. This process facilitated a structured approach to problem-solving, revealing the most prevalent challenges the system could potentially address.'},
+                            {name:'S.C.A.M.P.E.R', src: ideamap3, caption: 'The group employed SCAMPER maps to generate creative solutions for their system, Building on their problem-identification phase, they used the seven SCAMPER lenses (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse) to explore various angles and envision the system’s functionality. By delving beyond problem-solving, the group fostered collaboration, explored diverse user perspectives, and unearthed unexpected opportunities, resulting in a rich pool of ideas to address initial challenges and unlock potential for further improvement.'},
+                            {name:'User Journey Map', src: ideamap4, caption: 'Building on their understanding of the trucking sector and its complexities, the group lastly utilized a user journey map to delve deeper into the user experience. This visual tool allowed them to map out the different stages that truck drivers typically navigate, from pre-trip planning to post-delivery procedures. By pinpointing key touchpoints and potential pain points at each stage, the group gained valuable insights into user needs and frustrations. This comprehensive user journey map served as a crucial foundation for crafting a system that effectively addresses the challenges faced by truck drivers, ultimately enhancing their overall experience.'},
+                            
+                        ]
+                    }
+                />
+                
+            </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
         </div>
     )
 }
