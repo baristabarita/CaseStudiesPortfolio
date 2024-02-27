@@ -21,6 +21,7 @@ import persona3 from '../assets/images/CS1P3.jpg'
 import emmap1 from '../assets/images/CS1EM1.jpg'
 import emmap2 from '../assets/images/CS1EM2.jpg'
 import emmap3 from '../assets/images/CS1EM3.jpg'
+import Ideation from '@/components/casestudysections/Ideation'
 
 const CaseStudy1 = () => {
     const competitors = [
@@ -188,6 +189,19 @@ const CaseStudy1 = () => {
                     ]}
                 />
             </div>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Ideation
+                </span>
+                
+                {/* 
+                <Ideation 
+                    headline="Beyond Brainstorming: Unveiling the Power of Ideation Maps"
+                    statement="Creating a user-friendly and engaging ideation map interface with the sole focus to enhance app/site experience can help people achieve their goals not only easily but also be enjoyable. However, such a map should be clear and intuitive to help others navigate and interact through the planning session. It should also be useful and relevant so that others can find the value and benefit of utilizing the map in future project makings. With this in mind, the group created 4 ideation maps: brainstorming, fishbone, scamper, and user journey"
+                />
+                */}
+            </section>
         </div>
     )
 }
