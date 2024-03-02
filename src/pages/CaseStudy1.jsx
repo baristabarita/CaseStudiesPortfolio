@@ -26,6 +26,7 @@ import ideamap1 from '../assets/images/CS1IM1.jpg'
 import ideamap2 from '../assets/images/CS1IM2.jpg'
 import ideamap3 from '../assets/images/CS1IM3.jpg'
 import ideamap4 from '../assets/images/CS1IM4.jpg'
+import Prototypes from '@/components/casestudysections/Prototypes'
 
 
 const CaseStudy1 = () => {
@@ -217,6 +218,10 @@ const CaseStudy1 = () => {
                 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <Prototypes 
+                headline="WORKIN PROGRESS"
+                subheadline="THIS SECTION IS BEING WORKED ON OUTSIDE OF THE CODE"
+            />
         </div>
     )
 }
