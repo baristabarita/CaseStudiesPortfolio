@@ -203,6 +203,10 @@ const CaseStudy2 = () => {
                 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <Prototypes 
+                headline="WORKIN PROGRESS"
+                subheadline="THIS SECTION IS BEING WORKED ON OUTSIDE OF THE CODE"
+            />
         </div>
     )
 }
