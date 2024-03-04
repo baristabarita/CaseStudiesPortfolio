@@ -13,6 +13,7 @@ import UserResearch from '@/components/casestudysections/UserResearch'
 import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 import Ideation from '@/components/casestudysections/Ideation'
 
+import coverimg from '../assets/images/case1cover.png'
 import logo1 from '../assets/icons/shippabo.png'
 import logo2 from '../assets/icons/transfix.png'
 import logo3 from '../assets/icons/freightpop.png'
@@ -26,6 +27,7 @@ import ideamap1 from '../assets/images/CS1IM1.jpg'
 import ideamap2 from '../assets/images/CS1IM2.jpg'
 import ideamap3 from '../assets/images/CS1IM3.jpg'
 import ideamap4 from '../assets/images/CS1IM4.jpg'
+import Prototypes from '@/components/casestudysections/Prototypes'
 
 
 const CaseStudy1 = () => {
@@ -86,9 +88,9 @@ const CaseStudy1 = () => {
     ]
     return (
         <div>
-            <Cover image={samplebanner} />
+            <Cover image={coverimg} />
             <div className='px-10 sm:px-16 lg:px-20'>
-                <h1 className="text-5xl font-bold my-5 font-monsterrat">CaseStudy1 page title</h1>
+                <h1 className="text-5xl font-bold my-5 font-monsterrat">Case Study: GreenTrucker</h1>
                 <ul className="list-disc list-inside font-light font-roboto ml-7">
                     <li>Timeline: January - March 2024</li>
                 </ul>
@@ -217,6 +219,10 @@ const CaseStudy1 = () => {
                 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <Prototypes 
+                headline="WORKIN PROGRESS"
+                subheadline="THIS SECTION IS BEING WORKED ON OUTSIDE OF THE CODE"
+            />
         </div>
     )
 }
