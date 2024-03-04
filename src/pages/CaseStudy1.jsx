@@ -13,6 +13,7 @@ import UserResearch from '@/components/casestudysections/UserResearch'
 import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 import Ideation from '@/components/casestudysections/Ideation'
 
+import coverimg from '../assets/images/case1cover.png'
 import logo1 from '../assets/icons/shippabo.png'
 import logo2 from '../assets/icons/transfix.png'
 import logo3 from '../assets/icons/freightpop.png'
@@ -87,9 +88,9 @@ const CaseStudy1 = () => {
     ]
     return (
         <div>
-            <Cover image={samplebanner} />
+            <Cover image={coverimg} />
             <div className='px-10 sm:px-16 lg:px-20'>
-                <h1 className="text-5xl font-bold my-5 font-monsterrat">CaseStudy1 page title</h1>
+                <h1 className="text-5xl font-bold my-5 font-monsterrat">Case Study: GreenTrucker</h1>
                 <ul className="list-disc list-inside font-light font-roboto ml-7">
                     <li>Timeline: January - March 2024</li>
                 </ul>
