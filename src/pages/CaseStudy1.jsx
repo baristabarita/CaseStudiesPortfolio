@@ -12,6 +12,7 @@ import CaseList from '@/components/casestudysections/CaseList'
 import UserResearch from '@/components/casestudysections/UserResearch'
 import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 import Ideation from '@/components/casestudysections/Ideation'
+import Prototypes from '@/components/casestudysections/Prototypes'
 
 import coverimg from '../assets/images/case1cover.png'
 import logo1 from '../assets/icons/shippabo.png'
@@ -27,7 +28,9 @@ import ideamap1 from '../assets/images/CS1IM1.jpg'
 import ideamap2 from '../assets/images/CS1IM2.jpg'
 import ideamap3 from '../assets/images/CS1IM3.jpg'
 import ideamap4 from '../assets/images/CS1IM4.jpg'
-import Prototypes from '@/components/casestudysections/Prototypes'
+import wireframes from '../assets/images/case1devices.png'
+import lofiwireframe from '../assets/images/C1LOFI.png'
+import hifiwireframe from '../assets/images/C1HIFI.png'
 
 
 const CaseStudy1 = () => {
@@ -85,6 +88,147 @@ const CaseStudy1 = () => {
         "The time spent varies, but all interviewees generally reported spending a significant portion of their day on administrative tasks, including booking, scheduling, and paperwork.",
         "Most interviewees stated that they relied on word-of-mouth referrals and networking from fellow colleagues in finding clients. For managing existing clients, regular communication was utilized such as online chatting or phone calls.",
 
+    ]
+    const features = [
+        {
+            title: "Landing / Home Screen",
+            items: [
+                { description: "Application Logo at the top " },
+                { description: "Navigation bar with options such as “Home”, “About”, ”Features”, and “Contact”. " },
+                { description: "Buttons that navigate the user to the login page." }
+            ]
+        },
+        {
+            title: "Login / Registration Screens",
+            items: [
+                { description: "Login screen allows the user to input their email and password." },
+                { description: "Registration screen allows the user to create an account." },
+                { description: "Allows for the user to navigate between login and registration screens depending on the status (registered or not)." }
+            ]
+        },
+        {
+            title: "Dashboard Screen",
+            items: [
+                { description: "Logo at the top" },
+                { description: "Analytical statistics and graphs on certain aspects." },
+                { description: "Tables to provide the user a small overview of bookings and assets" },
+                { description: "Sidebar with options such as “Bookings”, “Assets”, “Payments”, and “Settings”." },
+                { description: "Actionable sidebar button that expounds or minimizes the sidebar" },
+                { description: "Logout Button" }
+            ]
+        },
+        {
+            title: "Bookings Screen",
+            items: [
+                { description: "Full table list of bookings added by the user with data such as Client Name, Booking Date, Status, etc." },
+                { description: "Add Booking Button." },
+                { description: "Can view selected booking details." },
+                { description: "Pagination in the case of multiple booking rows." },
+                { description: "Filter/Sorting settings" }
+            ]
+        },
+        {
+            title: "Assets Screen",
+            items: [
+                { description: "Full table list of assets added by the user with data such as Asset Type, Plate Number, Status, etc." },
+                { description: "Add Asset Button" },
+                { description: "Can view selected asset details." },
+                { description: "Tables are split between asset types." },
+                { description: "Pagination for each table." },
+            ]
+        },
+        {
+            title: "Payments Screen",
+            items: [
+                { description: "Full table list of payments added by the user with data such as Client Name, Remaining Balance, Status, etc." },
+                { description: "Set Charges Button for the user to edit on their rates of their respective business." },
+                { description: "Can view selected payments details" },
+                { description: "Sales Analysis graph to provide the user more insight." },
+                { description: "Pagination in the case of multiple payment rows." },
+            ]
+        },
+        {
+            title: "Settings Screen",
+            items: [
+                { description: "Has 2 sections, Profile Settings and Security Settings." },
+                { description: "Profile Settings allows the user to view and edit details such as their name, company name, address, and other details." },
+                { description: "Security Settings for changing passwords and account verification." },
+            ]
+        },
+    ]
+    const storyboards = [
+        {
+            title: "Landing / Home Page",
+            narratives: [
+                { description: "Arianne goes to GreenTucker’s website on her computer. She sees the website’s page and sees options in the navigation bar like “About Us,” ”Features,” ”Contact,” and ”Login.”" },
+            ]
+        },
+        {
+            title: "Sign-up Page",
+            narratives: [
+                { description: "Arianne creates her account by inputting the necessary information needed to make an account. She also sees another option, “Log in,” at the bottom of her screen." },
+            ]
+        },
+        {
+            title: "Sign-in Page",
+            narratives: [
+                { description: "Arianne inputs her registered email address and password to sign in. She also sees another option “Register Here” at the bottom of her screen." },
+            ]
+        },
+        {
+            title: "Dashboard Page",
+            narratives: [
+                { description: "Arianne could see important information on the dashboard page. She sees her total number of bookings, pending payments, assets en route, and clients this month. She also approves and declines bookings from her clients and sees the status of her current assets." },
+            ]
+        },
+        {
+            title: "Bookings Page",
+            narratives: [
+                { description: "Arianne sees all the bookings she made with a client. She sees the status of each booking and the options to “View“, “Edit“, and “Delete” bookings." },
+            ]
+        },
+        {
+            title: "View Booking Details Page",
+            narratives: [
+                { description: "Arianne sees the overview information regarding the booking details, client details, and container and item details. She also sees the details of what truck and trailer were used and their respective information, as well as the documents that were submitted." },
+            ]
+        },
+        {
+            title: "Ongoing Bookings Page",
+            narratives: [
+                { description: "Arianne sees the details of the ongoing booking she has with a client. She sees the primary details of the booking as well as the information about her client. She also sees the assigned assets that were used, the documents that were submitted, and the details of the container and item. Arianne also sees other options like “Set Details” and “Confirm Completion.”" },
+            ]
+        },
+        {
+            title: "Assets Page",
+            narratives: [
+                { description: "Arianne could see her truck and trailer assets and their respective information and status. Arianne adds a new truck and inputted information involving the truck. Arianne also sees other options like “Edit” and “Delete”." },
+            ]
+        },
+        {
+            title: "Payments Page",
+            narratives: [
+                { description: "Arianne sees the basic information she has about her clients and their payment status in her invoice." },
+            ]
+        },
+        {
+            title: "View Payment Details Page",
+            narratives: [
+                { description: "Arianne sees more detailed payment information she made with a client." },
+            ]
+        },
+        {
+            title: "Profile / Settings Page",
+            narratives: [
+                { description: "Arianne views her account information. She has the option to view the general information or the security related information.. " },
+            ]
+        },
+        {
+            title: "Edit Profile / Security Pages",
+            narratives: [
+                { description: "Arianne edits her account information to reflect changes in her company and changes her password for better security." },
+            ]
+        },
     ]
     return (
         <div>
@@ -201,28 +345,41 @@ const CaseStudy1 = () => {
                 <span className='text-1xl font-light font-monsterrat mb-2'>
                     Ideation
                 </span>
-                
-                 
-                <Ideation 
+
+
+                <Ideation
                     headline="Beyond Brainstorming: Unveiling the Power of Ideation Maps"
                     statement="Creating a user-friendly and engaging ideation map interface with the sole focus to enhance app/site experience can help people achieve their goals not only easily but also be enjoyable. However, such a map should be clear and intuitive to help others navigate and interact through the planning session. It should also be useful and relevant so that others can find the value and benefit of utilizing the map in future project makings. With this in mind, the group created 4 ideation maps: brainstorming, fishbone, scamper, and user journey"
-                    ideations = {
+                    ideations={
                         [
-                            {name:'Brainstorming Map', src: ideamap1, caption: 'The group used a brainstorming map to identify a specific sector within the logistics industry for their system, given its broad scope and significant role in the global economy. After considering various sectors, the group decided to focus on the trucking sector due to its crucial role in national trade and commerce, its potential for innovation in the supply chain, and the existing familiarity of a group member’s parent with the industry. The brainstorming map was instrumental in generating, organizing, evaluating, and prioritizing ideas, ultimately guiding the group to select the best idea that aligns with the system’s vision and scope.'},
-                            {name:'Fishbone Diagram', src: ideamap2, caption: 'The group used fishbone diagrams to identify and address potential problems within the logistics industry. The diagrams helped highlight prevalent issues such as operational difficulties in businesses and challenges in client-business partner connections. Some of the main causes identified include lack of communication, outdated operational methods, and inadequate access to client databases. The fishbone diagrams facilitated a structured problem-solving process, enabling the group to visualize the relationships between the problems and their causes.'},
-                            {name:'S.C.A.M.P.E.R', src: ideamap3, caption: 'The group utilized SCAMPER maps to generate solutions for their system, The SCAMPER method allowed the group to explore different aspects of the processes based on the system in mind. Ideas were generated under each of the seven lenses - Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, and Reverse. The group agreed on key ideas such as replacing paper-based booking systems with a digital interface and adapting client feedback mechanisms for service improvements. The SCAMPER session not only addressed initial challenges but also uncovered unforeseen opportunities for improvement, enhancing collaboration and exploring different scenarios and perspectives for the system and its users.'},
-                            {name:'User Journey Map', src: ideamap4, caption: 'For the final phase of the ideation process, the group used a User Journey Map to visualize the experience of a user with the system. The User Journey Map allowed the group to understand the user’s interactions with the system, their needs, perceptions, and pain points. The group mapped out different stages of the user’s journey, from initial contact through the process of engagement and into a long-term relationship. Key insights such as the need for an intuitive interface and efficient communication channels were identified. The User Journey Map facilitated a user-centered approach, enabling the group to design a system that not only solves industry problems but also enhances the user experience.'},
-                            
+                            { name: 'Brainstorming Map', src: ideamap1, caption: 'The group used a brainstorming map to identify a specific sector within the logistics industry for their system, given its broad scope and significant role in the global economy. After considering various sectors, the group decided to focus on the trucking sector due to its crucial role in national trade and commerce, its potential for innovation in the supply chain, and the existing familiarity of a group member’s parent with the industry. The brainstorming map was instrumental in generating, organizing, evaluating, and prioritizing ideas, ultimately guiding the group to select the best idea that aligns with the system’s vision and scope.' },
+                            { name: 'Fishbone Diagram', src: ideamap2, caption: 'The group used fishbone diagrams to identify and address potential problems within the logistics industry. The diagrams helped highlight prevalent issues such as operational difficulties in businesses and challenges in client-business partner connections. Some of the main causes identified include lack of communication, outdated operational methods, and inadequate access to client databases. The fishbone diagrams facilitated a structured problem-solving process, enabling the group to visualize the relationships between the problems and their causes.' },
+                            { name: 'S.C.A.M.P.E.R', src: ideamap3, caption: 'The group utilized SCAMPER maps to generate solutions for their system, The SCAMPER method allowed the group to explore different aspects of the processes based on the system in mind. Ideas were generated under each of the seven lenses - Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, and Reverse. The group agreed on key ideas such as replacing paper-based booking systems with a digital interface and adapting client feedback mechanisms for service improvements. The SCAMPER session not only addressed initial challenges but also uncovered unforeseen opportunities for improvement, enhancing collaboration and exploring different scenarios and perspectives for the system and its users.' },
+                            { name: 'User Journey Map', src: ideamap4, caption: 'For the final phase of the ideation process, the group used a User Journey Map to visualize the experience of a user with the system. The User Journey Map allowed the group to understand the user’s interactions with the system, their needs, perceptions, and pain points. The group mapped out different stages of the user’s journey, from initial contact through the process of engagement and into a long-term relationship. Key insights such as the need for an intuitive interface and efficient communication channels were identified. The User Journey Map facilitated a user-centered approach, enabling the group to design a system that not only solves industry problems but also enhances the user experience.' },
+
                         ]
                     }
                 />
-                
+
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
-            <Prototypes 
-                headline="WORKIN PROGRESS"
-                subheadline="THIS SECTION IS BEING WORKED ON OUTSIDE OF THE CODE"
-            />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Wireframes and Wireflow Design
+                </span>
+                <Prototypes
+                    headline="Design Process and Features"
+                    subheadline="After undergoing through multiple brainstorming sessions, the group was able to put together a structure for the application's design. The group utilized Figma, a collaborative interface design tool, to create the low-fidelity (lo-fi) and high-fidelity (hi-fi) wireframes for the application. These wireframes are the blueprint of the application that provide a visual guide representing the skeletal framework of the application."
+                    image = {wireframes}
+                    features = {features}
+                    head2 = "StoryBoards"
+                    subhead2 = "To provide a better user experience, the group utilized storyboards in laying down the user flow of the application. This approach ensured a user-centric design, allowing the team to anticipate user needs and optimize the application's structure and functionality accordingly. The group created 3 storyboards: a narrative version utilizing one of the user personas and two non-narrative versions utilizing lo-fi and hi-fi wireframes created."
+                    persona = " Arianne Bautista"
+                    storyboards = {storyboards}
+                    lofiwireframe={lofiwireframe}
+                    hifiwireframe={hifiwireframe}
+                />
+            </section>
         </div>
     )
 }
