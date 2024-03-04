@@ -205,10 +205,17 @@ const CaseStudy2 = () => {
                 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Wireframes and Wireflow Design - work in progress
+                </span>
+            </section>
+            {/*
             <Prototypes 
                 headline="WORKIN PROGRESS"
                 subheadline="THIS SECTION IS BEING WORKED ON OUTSIDE OF THE CODE"
             />
+        */}
         </div>
     )
 }
