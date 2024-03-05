@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Prototypes = ({ headline, subheadline, image, features, head2, subhead2, persona, storyboards, lofiwireframe, hifiwireframe }) => {
+const Prototypes = ({ headline, subheadline, image, features, addscreens, head2, subhead2, persona, storyboards, lofiwireframe, hifiwireframe }) => {
 
     return (
         <>
@@ -19,6 +19,23 @@ const Prototypes = ({ headline, subheadline, image, features, head2, subhead2, p
                         <strong className='text-2xl'>{feature.title}</strong>
                         <ul className="list-disc list-inside font-light ml-7">
                             {feature.items.map((item, itemIndex) => (
+                                <li key={itemIndex} className='mt-2'>
+                                    {item.description}
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
+                ))}
+            </ol>
+            <p className="text-left font-roboto font-light text-lg">
+                Below are Additional screen in relation to the previously mentioned screens.
+            </p>
+            <ol className="list-decimal list-inside font-roboto ml-7">
+                {addscreens.map((addscreen, index) => (
+                    <li key={index} className='my-3'>
+                        <strong className='text-2xl'>{addscreen.title}</strong>
+                        <ul className="list-disc list-inside font-light ml-7">
+                            {addscreen.items.map((item, itemIndex) => (
                                 <li key={itemIndex} className='mt-2'>
                                     {item.description}
                                 </li>
@@ -48,6 +65,7 @@ const Prototypes = ({ headline, subheadline, image, features, head2, subhead2, p
                     </li>
                 ))}
             </ol>
+
             <h1 className='font-bold font-roboto text-xl mb-2 ml-6 mt-5'>Non-Narrative Storyboard: Lo-Fi Wireframes</h1>
             <div className="h-128 w-256 mx-auto flex justify-center items-center">
                 <img className="object-cover rounded-lg h-full w-[190vh] border border-black" src={lofiwireframe} alt="" />
