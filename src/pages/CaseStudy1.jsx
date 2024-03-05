@@ -121,8 +121,8 @@ const CaseStudy1 = () => {
             title: "Bookings Screen",
             items: [
                 { description: "Full table list of bookings added by the user with data such as Client Name, Booking Date, Status, etc." },
-                { description: "Add Booking Button." },
-                { description: "Can view selected booking details." },
+                { description: "Add Booking Button to add a new booking to the list." },
+                { description: "View Details button to view the information of the selected booking." },
                 { description: "Pagination in the case of multiple booking rows." },
                 { description: "Filter/Sorting settings" }
             ]
@@ -131,8 +131,9 @@ const CaseStudy1 = () => {
             title: "Assets Screen",
             items: [
                 { description: "Full table list of assets added by the user with data such as Asset Type, Plate Number, Status, etc." },
-                { description: "Add Asset Button" },
-                { description: "Can view selected asset details." },
+                { description: "Add Asset Button to add a new asset." },
+                { description: "Edit Asset button to edit asset information" },
+                { description: "Delete Asset button to delete the selected asset." },
                 { description: "Tables are split between asset types." },
                 { description: "Pagination for each table." },
             ]
@@ -147,6 +148,26 @@ const CaseStudy1 = () => {
                 { description: "Pagination in the case of multiple payment rows." },
             ]
         },
+    ]
+    const addscreens = [
+        {
+            title: "View Booking Screen",
+            items: [
+                { description: "Displays detailed information on the selected booking such as General Information (e.g., client name, status est. finish date, etc.), Container Details, and Item Details." },
+                { description: "Edit Booking button to edit only specific details of the booking (est. finish date and status)." },
+                { description: "Add assets button to assign owned assets to the booking." },
+                { description: "Delete Booking button to delete the selected button." }
+                
+            ]
+        },
+        {
+            title: "Edit Asset Screen",
+            items: [
+                { description: "Login screen allows the user to input their email and password.Displays detailed information on the selected asset such as Asset type, Plate Number, Status." },
+                { description: "Able to edit the detailed information." },
+                { description: "ASave Changes button to save the new information." }
+            ]
+        },
         {
             title: "Settings Screen",
             items: [
@@ -155,6 +176,7 @@ const CaseStudy1 = () => {
                 { description: "Security Settings for changing passwords and account verification." },
             ]
         },
+
     ]
     const storyboards = [
         {
@@ -372,6 +394,7 @@ const CaseStudy1 = () => {
                     subheadline="After undergoing through multiple brainstorming sessions, the group was able to put together a structure for the application's design. The group utilized Figma, a collaborative interface design tool, to create the low-fidelity (lo-fi) and high-fidelity (hi-fi) wireframes for the application. These wireframes are the blueprint of the application that provide a visual guide representing the skeletal framework of the application."
                     image = {wireframes}
                     features = {features}
+                    addscreens={addscreens}
                     head2 = "StoryBoards"
                     subhead2 = "To provide a better user experience, the group utilized storyboards in laying down the user flow of the application. This approach ensured a user-centric design, allowing the team to anticipate user needs and optimize the application's structure and functionality accordingly. The group created 3 storyboards: a narrative version utilizing one of the user personas and two non-narrative versions utilizing lo-fi and hi-fi wireframes created."
                     persona = " Arianne Bautista"
