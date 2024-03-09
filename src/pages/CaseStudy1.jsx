@@ -12,6 +12,7 @@ import CaseList from '@/components/casestudysections/CaseList'
 import UserResearch from '@/components/casestudysections/UserResearch'
 import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 import Ideation from '@/components/casestudysections/Ideation'
+import Wireframes from '@/components/casestudysections/Wireframes'
 import Prototypes from '@/components/casestudysections/Prototypes'
 
 import coverimg from '../assets/images/case1cover.png'
@@ -28,9 +29,11 @@ import ideamap1 from '../assets/images/CS1IM1.jpg'
 import ideamap2 from '../assets/images/CS1IM2.jpg'
 import ideamap3 from '../assets/images/CS1IM3.jpg'
 import ideamap4 from '../assets/images/CS1IM4.jpg'
+import moodboard from '../assets/images/case1moodboard.png'
 import wireframes from '../assets/images/case1devices.png'
-import lofiwireframe from '../assets/images/C1LOFI.png'
-import hifiwireframe from '../assets/images/C1HIFI.png'
+import hifiwireframe1 from '../assets/images/C1HIFI1.png'
+import hifiwireframe2 from '../assets/images/C1HIFI2.png'
+
 
 
 const CaseStudy1 = () => {
@@ -95,7 +98,8 @@ const CaseStudy1 = () => {
             items: [
                 { description: "Application Logo at the top " },
                 { description: "Navigation bar with options such as “Home”, “About”, ”Features”, and “Contact”. " },
-                { description: "Buttons that navigate the user to the login page." }
+                { description: "Buttons that navigate the user to the login page." },
+                { description: "Promotional section containing the features of the website." }
             ]
         },
         {
@@ -104,6 +108,25 @@ const CaseStudy1 = () => {
                 { description: "Login screen allows the user to input their email and password." },
                 { description: "Registration screen allows the user to create an account." },
                 { description: "Allows for the user to navigate between login and registration screens depending on the status (registered or not)." }
+            ]
+        },
+        {
+            title: "Services Screens",
+            items: [
+                { description: "List of available trucking services, each displayed in card form." },
+                { description: "Each trucking service card displays the Company name, Address, Review Rating, Service Price Rate, etc." },
+                { description: "Clicking on the view details button displays the full details of the selected service on a separate page." },
+                { description: "Pagination for displaying a specific number of services per page." },
+                { description: "Booking Services Screens." },
+            ]
+        },
+        {
+            title: "Booking Services Screens",
+            items: [
+                { description: "Form that allows for the user to input essential details such as Container Details, Item Details,  Est. Finish Date and Location Details." },
+                { description: "“Submit” button to proceed to booking confirmation screen" },
+                { description: "Clicking on the view details button displays the full details of the selected service on a separate page.Confirmation screen displays all the previously mentioned details as well as the total booking computation." },
+                { description: "“Confirm” button to finalize the booking." },
             ]
         },
         {
@@ -151,21 +174,60 @@ const CaseStudy1 = () => {
     ]
     const addscreens = [
         {
-            title: "View Booking Screen",
+            title: "Track Bookings Screens (Client Side)",
+            items: [
+                { description: "Visual Representation of the booking status (e.g., pending, ongoing, complete)" },
+                { description: "Displays Estimated finish time." },
+                { description: "Displays Container and Item Information." },
+                { description: "Contact Information of the booked service." },
+                { description: "Rate Service button to review and rate the selected trucking service." },
+
+            ]
+        },
+        {
+            title: "Ratings Screen (Client Side)",
+            items: [
+                { description: "Able to select a star rating from 1 to 5" },
+                { description: "Textbox for the user to fully explain their rating and experience with the selected service." },
+            ]
+        },
+        {
+            title: "View Booking Screen (Manager Side)",
             items: [
                 { description: "Displays detailed information on the selected booking such as General Information (e.g., client name, status est. finish date, etc.), Container Details, and Item Details." },
                 { description: "Edit Booking button to edit only specific details of the booking (est. finish date and status)." },
                 { description: "Add assets button to assign owned assets to the booking." },
                 { description: "Delete Booking button to delete the selected button." }
-                
+
             ]
         },
         {
-            title: "Edit Asset Screen",
+            title: "Edit Asset Screen (Manager Side)",
             items: [
                 { description: "Login screen allows the user to input their email and password.Displays detailed information on the selected asset such as Asset type, Plate Number, Status." },
                 { description: "Able to edit the detailed information." },
-                { description: "ASave Changes button to save the new information." }
+                { description: "Save Changes button to save the new information." }
+            ]
+        },
+        {
+            title: "Verification Requests Screen (Admin Side)",
+            items: [
+                { description: "Displays detailed information of the accounts that sent verification requests." },
+                { description: "View Details button to open the Account Details modal, which will allow the admins to verify the selected account or not." },
+            ]
+        },
+        {
+            title: "Account Logs Screen (Admin Side)",
+            items: [
+                { description: "Displays detailed information of all accounts and users registered in the database." },
+                { description: "Displays account statuses of “Active”, “Deactivate”, and “Deleted”." },
+                { description: "View details button to show a modal displaying the full details of the user." },
+            ]
+        },
+        {
+            title: "Booking Logs Screen (Admin Side)",
+            items: [
+                { description: "Displays all detailed information of all bookings placed in the website." },
             ]
         },
         {
@@ -297,7 +359,12 @@ const CaseStudy1 = () => {
 
                 <PaperResearch
                     headline="White Paper Research"
-                    statement="Starting with white paper research, The group started their study with an extensive review of research articles and works on efficiency, trucking, and related economic impacts."
+                    statement1={
+                        <span>
+                            Starting with white paper research, the group went through a brainstorming session to choose one of the 17 Sustainable Development Goals (SDG). Afterwhich, the group chose <a className='text-blue-500 underline' href="https://www.un.org/sustainabledevelopment/economic-growth/">SDG 8 - Decent Work and Economic Growth</a> - as it aligns with the group’s aim to contribute to these targets and address the challenges in the trucking industry and its economic implications.
+                        </span>
+                    }
+                    statement2="The group continued their study with an extensive review of research articles and works on efficiency, trucking, and related economic impacts."
                 />
                 <p className='text-left mt-2 font-roboto font-light text-lg'>
                     In a study conducted by the{' '}
@@ -389,22 +456,50 @@ const CaseStudy1 = () => {
                 <span className='text-1xl font-light font-monsterrat mb-2'>
                     Wireframes and Wireflow Design
                 </span>
-                <Prototypes
-                    headline="Design Process and Features"
-                    subheadline="After undergoing through multiple brainstorming sessions, the group was able to put together a structure for the application's design. The group utilized Figma, a collaborative interface design tool, to create the low-fidelity (lo-fi) and high-fidelity (hi-fi) wireframes for the application. These wireframes are the blueprint of the application that provide a visual guide representing the skeletal framework of the application."
-                    image = {wireframes}
-                    features = {features}
+                <Wireframes
+                    headline="Design Process"
+                    subheadline="After undergoing through multiple brainstorming sessions, the group was able to put together a design for a web-application called “GreenTrucker”. This web-application aims to aid trucking managers in increasing their productivity and work efficiency. Additionally, this application also aims to bridge clients with trucking services. The brainstorming sessions, done through MIRO, were a platform for the team to share, debate, and refine their ideas, leading to the creation of “GreenTrucker”. This application is designed with features that could potentially streamline workflow, automate routine tasks, streamline the booking process, provide real-time data and analytics, or facilitate better communication and scheduling."
+                    image={moodboard}
+                    headline1_1="Screens and Features"
+                    image1_1={wireframes}
+                    subheadline1_1="The group utilized Figma, a collaborative interface design tool, to create the wireframes for the application. These wireframes are the blueprint of the application that provide a visual guide representing the skeletal framework of the application. This helped the group to plan the layout and interaction of their application in accordance to user needs."
+                    features={features}
                     addscreens={addscreens}
-                    head2 = "StoryBoards"
-                    subhead2 = "To provide a better user experience, the group utilized storyboards in laying down the user flow of the application. This approach ensured a user-centric design, allowing the team to anticipate user needs and optimize the application's structure and functionality accordingly. The group created 3 storyboards: a narrative version utilizing one of the user personas and two non-narrative versions utilizing lo-fi and hi-fi wireframes created."
-                    persona = " Arianne Bautista"
-                    storyboards = {storyboards}
-                    lofiwireframe={lofiwireframe}
-                    hifiwireframe={hifiwireframe}
+                    head2="StoryBoards"
+                    subhead2="To provide a better user experience, the group utilized storyboards in laying down the user flow of the application. This approach ensured a user-centric design, allowing the team to anticipate user needs and optimize the application's structure and functionality accordingly. The group created 3 storyboards: a narrative version focusing in the manager side and utilizing one of the user personas, and two non-narrative versions utilizing hi-fi wireframes for both the manager and client side were created."
+                    persona=" Arianne Bautista"
+                    storyboards={storyboards}
+                    wireframetitle1="Manager-Side Screens Storyboard"
+                    lofiwireframe={hifiwireframe1}
+                    wireframetitle2="Client-Side Screens Storyboard"
+                    hifiwireframe={hifiwireframe2}
                 />
             </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Prototypes
+                </span>
+                <Prototypes
+                    headline="Manager & Client Screens Prototype"
+                    figmasource="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FO3BWlgelmTIPdIDc70PmRr%2FDESPROJ-WIREFRAMES%3Fpage-id%3D1%253A1566%26type%3Ddesign%26node-id%3D350-9410%26viewport%3D-158%252C359%252C0.25%26t%3Dwmt8SwCA5g0bDisY-1%26scaling%3Dscale-down%26starting-point-node-id%3D350%253A9410%26mode%3Ddesign"
+                />
+                <Prototypes
+                    headline="Admin Screens Prototype"
+                    figmasource="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FO3BWlgelmTIPdIDc70PmRr%2FDESPROJ-WIREFRAMES%3Fpage-id%3D1%253A1566%26type%3Ddesign%26node-id%3D350-18428%26viewport%3D290%252C282%252C0.03%26t%3DAzTgETA2r82jXRsz-1%26scaling%3Dscale-down%26starting-point-node-id%3D350%253A18428%26show-proto-sidebar%3D1%26mode%3Ddesign"
+                />
+            </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-center text-center pt-6 px-10 sm:px-16 lg:px-20'>
+                <h1 className="text-3xl font-bold font-monsterrat mb-4">
+                    Check out our <a className="text-red-400" href="https://www.figma.com/file/O3BWlgelmTIPdIDc70PmRr/DESPROJ-WIREFRAMES?type=design&node-id=405%3A19067&mode=design&t=1vaU8bVk6IBIBVzU-1">Figma File</a>.
+                </h1>
+
+            </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
         </div>
     )
 }
 
 export default CaseStudy1;
+
