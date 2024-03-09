@@ -9,7 +9,7 @@ const CasestudyList = () => {
 
     const caseStudies = [
         {imgSrc: cs1cover, title: 'Case Study 1: GreenTrucker', description: 'A system focused on aiding trucking managers by increasing work efficiency.', link: '/casestudy1'},
-        {imgSrc: cs2cover, title: 'Case Study 2: CargoClick', description: 'A system with an aim to help clients connect with service providers.', link: '/casestudy2'},
+        {imgSrc: cs2cover, title: 'Case Study 2: StockSavvy', description: 'A system with an aim to help business retailers and suppliers with inventory management.', link: '/casestudy2'},
         
     ]
     return(
