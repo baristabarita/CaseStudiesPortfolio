@@ -14,6 +14,8 @@ import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 import Ideation from '@/components/casestudysections/Ideation'
 import Wireframes from '@/components/casestudysections/Wireframes'
 import Prototypes from '@/components/casestudysections/Prototypes'
+import Reflections from '@/components/casestudysections/Reflections'
+import Conclusion from '@/components/casestudysections/Conclusion'
 
 import coverimg from '../assets/images/case1cover.png'
 import logo1 from '../assets/icons/shippabo.png'
@@ -314,6 +316,17 @@ const CaseStudy1 = () => {
             ]
         },
     ]
+    const reflections = [
+        {
+            items: [
+                { title: "Alburo, Nichole", description: "Ensuring our design remains fitted to our chosen Sustainable Development Goal (SDG) introduces a significant challenge into our wireframing process. We studied every design element to ensure its alignment with our objectives. This evaluation encompasses every part of our wireframes, from the selection of color palettes to the careful consideration of typography. It's become evident that achieving a delicate balance between aesthetic appeal and environmental responsibility is not only desirable but essential. Amidst these challenges, I've come to realize that the true essence of design extends beyond mere visual allure; it must also serve as a catalyst for positive change among our target users. Through this ongoing process, I've come to better understand how design and sustainability are closely connected. I've realized how they both play a big role in creating a fairer digital world." },
+                { title: "Barita, Shane", description: "As someone who has a passion for web-development, creating wireframes can often be an eye-opening experience. It allows me to really put thought into how to create a good user experience should one ever use my websites. This case study has taught me the importance of empathy in design, reminding me that behind every click or scroll is a user with unique needs and expectations. It has also underscored the significance of iterative design, reinforcing the idea that a good user experience is not a destination, but a continuous journey of learning, adapting, and improving. " },
+                { title: "Mandigma, Ralph", description: "What I learned from the case study was that it's never easy to make a prototype due to the group's expectations. We must always change our prototype according to our criteria, make the product doable, and follow the principles of our SDG choices, SDG 8 for this case. The prototype we made could fuel economic growth by attracting new clients and managers, fueling the growth of our project, which is the trucking scene in the logistics industry. " },
+                { title: "Marbella, Jasper", description: "As someone who likes to create UI/UX designs, I realized that it really takes a lot of time creating a prototype. Because you have to take into consideration what the client wants, and how to make the user experience good while making sure that the website is sufficient in both functionality and aesthetics. Two things I can get from the case study is that one, creating wireframes is the way to go as it really allows for your creativity to shine. And the second one is that, creating and prototyping is not just about making the website good, but to make sure that it is functional." },
+            
+            ]
+        },
+    ]
     return (
         <div>
             <Cover image={coverimg} />
@@ -452,6 +465,15 @@ const CaseStudy1 = () => {
 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-center text-center pt-6 px-10 sm:px-16 lg:px-20'>
+                <h1 className="text-3xl font-bold font-monsterrat mb-4">
+                    Check out our <a className="text-red-400" 
+                    href="https://miro.com/app/board/uXjVNx3c5Qk=/?share_link_id=155409957930">
+                        MIRO Board</a>.
+                </h1>
+
+            </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
             <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
                 <span className='text-1xl font-light font-monsterrat mb-2'>
                     Wireframes and Wireflow Design
@@ -497,6 +519,26 @@ const CaseStudy1 = () => {
 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Lesson Learned
+                </span>
+                <Reflections
+                    headline="Group's Reflections"
+                    subheadline="Every group member presented their findings and learnings from the case study, fostering communication and collaboration. Through sharing our observations, experiences, and insights, we aim to spot common trends, unexpected discoveries, and potential areas for innovation. This reflective process deepens our understanding of user perspectives and cultivates a collective sense of design thinking within the group."
+                    reflections={reflections}
+                />
+            </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Conclusion
+                </span>
+                <Conclusion
+                    headline="Key Takeaways and Insights"
+                    subheadline="In conclusion, this case study allowed the group to explore the development of a web-application that aims to highlight the necessity for sustainable economic growth that fosters decent work and productivity in the trucking industry. Through various design thinking principles, the group gathered key findings such as improved working conditions for trucking managers, and improved efficiency and cost savings for both clients and managers through a streamlined process. Moving forward, this application can be further expanded and strengthened through utilizing data analytics for better optimization, and expanding the platform’s reach to include more users. This case study serves as a testament to the power of design thinking and technology to address complex challenges and create a more sustainable and equitable future for all stakeholders in the trucking industry."
+                />
+            </section>
         </div>
     )
 }
