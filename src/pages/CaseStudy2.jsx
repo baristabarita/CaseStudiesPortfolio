@@ -14,6 +14,8 @@ import SynthesizeResearch from '@/components/casestudysections/SynthRes'
 import Ideation from '@/components/casestudysections/Ideation'
 import Wireframes from '@/components/casestudysections/Wireframes'
 import Prototypes from '@/components/casestudysections/Prototypes'
+import Reflections from '@/components/casestudysections/Reflections'
+import Conclusion from '@/components/casestudysections/Conclusion'
 
 import coverimg from '../assets/images/case2cover.png'
 import logo1 from '../assets/icons/magestore.jpg'
@@ -251,6 +253,17 @@ const CaseStudy2 = () => {
             ]
         },
     ]
+    const reflections = [
+        {
+            items: [
+                { title: "Alburo, Nichole", description: "Aligning our design with our chosen SDG presents a unique challenge in the wireframing stage. We meticulously reviewed each design feature to ensure it meets our goals. This scrutiny covers all aspects of our wireframes, from color choices to typography. We’ve learned that striking a balance between visual appeal and environmental consideration is not just preferable but necessary. In facing these challenges, I’ve recognized that design’s true value lies not just in its looks but in its ability to drive positive change for our users. This process has deepened my understanding of the link between design and sustainability, and their joint importance in shaping a more equitable digital landscape." },
+                { title: "Barita, Shane", description: "For a web development enthusiast, wireframing is a revelatory process. It's an exercise in thoughtful design, aimed at crafting a user experience that resonates with those who visit my sites. This case study has been a lesson in the value of empathy within design, highlighting that each interaction is tied to a user with distinct needs and desires. It has also brought to light the importance of an iterative approach to design, emphasizing that enhancing user experience is an ongoing process of discovery, refinement, and enhancement." },
+                { title: "Mandigma, Ralph", description: "The case study has taught me that prototyping is a complex task, shaped by group expectations and the need for continuous adaptation. It’s essential to align our prototype with our objectives, ensure its feasibility, and adhere to the principles of our chosen SDGs, particularly SDG 9 in this instance. Our case study has shown that the prototype has the potential to drive innovation in aiding business retailers and suppliers, thereby contributing to the expansion of our project within the retail industry." },
+                { title: "Marbella, Jasper", description: "Creating UI/UX designs is indeed a time-intensive process, as it involves balancing client requirements with the goal of delivering an optimal user experience. The process must ensure that the website is not only visually appealing but also fully functional. From the case study, it's evident that wireframing is a critical step that unleashes creative potential, and that prototyping extends beyond aesthetics to prioritize functionality." },
+            
+            ]
+        },
+    ]
     return (
         <div>
             <Cover image={coverimg} />
@@ -385,6 +398,15 @@ const CaseStudy2 = () => {
 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-center text-center pt-6 px-10 sm:px-16 lg:px-20'>
+                <h1 className="text-3xl font-bold font-monsterrat mb-4">
+                    Check out our <a className="text-red-400" 
+                    href="https://miro.com/app/board/uXjVNsTWIGM=/?share_link_id=799139048700">
+                        MIRO Board</a>.
+                </h1>
+
+            </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
             <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
                 <span className='text-1xl font-light font-monsterrat mb-2'>
                     Wireframes and Wireflow Design
@@ -430,6 +452,26 @@ const CaseStudy2 = () => {
 
             </section>
             <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Lesson Learned
+                </span>
+                <Reflections
+                    headline="Group's Reflections"
+                    subheadline="Every group member presented their findings and learnings from the case study, fostering communication and collaboration. Through sharing our observations, experiences, and insights, we aim to spot common trends, unexpected discoveries, and potential areas for innovation. This reflective process deepens our understanding of user perspectives and cultivates a collective sense of design thinking within the group."
+                    reflections={reflections}
+                />
+            </section>
+            <Separator className="w-[20em] mx-auto md:w-[40em] lg:w-[75em] lg:mx-20 mt-8 bg-black" />
+            <section className='flex flex-col items-start pt-6 px-10 sm:px-16 lg:px-20'>
+                <span className='text-1xl font-light font-monsterrat mb-2'>
+                    Conclusion
+                </span>
+                <Conclusion
+                    headline="Key Takeaways and Insights"
+                    subheadline="In conclusion, this case study allowed the group to explore the development of a web-application with the aim of fosterring innovation and building resilient infrastructure within the context of inventory management for business retailers and suppliers. Through various design thinking principles, the group gathered key findings such as Enhanced inventory visibility and control for retailers, leading to reduced stockouts and overstocking.. Moving forward, this application can be further expanded and strengthened through expanding the system's reach to encompass a wider range of industries and product categories, and integrating communication and collaboration between retailers and suppliers, optimizing delivery schedules and minimizing waste. This case study paves the way for a more sustainable and efficient future for businesses and the environment."
+                />
+            </section>
         </div>
     )
 }
