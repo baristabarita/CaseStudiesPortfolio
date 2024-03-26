@@ -8,7 +8,7 @@ import cs2cover from '../../assets/images/case2cover.png'
 const CasestudyList = () => {
 
     const caseStudies = [
-        {imgSrc: cs1cover, title: 'Case Study 1: GreenTrucker', description: 'A system focused on aiding trucking managers by increasing work efficiency.', link: '/casestudy1'},
+        {imgSrc: cs1cover, title: '[CHOSEN] Case Study 1: GreenTrucker', description: 'A system focused on aiding trucking managers by increasing work efficiency.', link: '/casestudy1'},
         {imgSrc: cs2cover, title: 'Case Study 2: StockSavvy', description: 'A system with an aim to help business retailers and suppliers with inventory management.', link: '/casestudy2'},
         
     ]
