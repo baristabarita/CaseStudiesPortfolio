@@ -331,7 +331,7 @@ const CaseStudy1 = () => {
         <div>
             <Cover image={coverimg} />
             <div className='px-10 sm:px-16 lg:px-20'>
-                <h1 className="text-5xl font-bold my-5 font-monsterrat">Case Study: GreenTrucker</h1>
+                <h1 className="text-5xl font-bold my-5 font-monsterrat">[SELECTED] Case Study: GreenTrucker</h1>
                 <ul className="list-disc list-inside font-light font-roboto ml-7">
                     <li>Timeline: January - March 2024</li>
                 </ul>
